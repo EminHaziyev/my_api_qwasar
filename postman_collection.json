@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "Simple Animals API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth - Login",
+      "request": {
+        "method": "POST",
+        "header": [ { "key": "Content-Type", "value": "application/json" } ],
+        "url": { "raw": "http://localhost:3000/api/auth/login", "host": ["http://localhost:3000"], "path": ["api","auth","login"] },
+        "body": { "mode": "raw", "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"admin123\"\n}" }
+      }
+    },
+    {
+      "name": "Animals - List",
+      "request": { "method": "GET", "url": { "raw": "http://localhost:3000/api/animals?page=1&limit=20" } }
+    }
+  ]
+}
+
+
